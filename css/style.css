@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: 'Montserrat';
+    color: white;
+    line-height: 1.6;
+}
+.main {
+    width: 100%;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("../img/intro.jpg") center no-repeat;
+    background-size: cover;
+}
+.in_intro {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+.intro_title {
+    font-size: 110px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.intro_subtitle {
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid white;
+    padding: 8px 30px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background .1s linear, color .1s linear;
+}
+.btn:hover {
+    background-color: coral;
+    border: 3px solid coral;
+    color: white;
+}
+
+.arrow-bottom {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border-top: 5px solid coral;
+    border-right: 5px solid coral;
+    transform: rotate(135deg); 
+}
+    
+
+.section {
+    padding: 80px 0;
+}
+.section_head {
+    color: black;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+.section_subtitle {
+    font-size: 24px;
+}
+.section_title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.section_title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+    background-color: coral;
+}
+.section_text {
+    font-size: 15px;
+    color: #999;
+}
+
+.slider {
+    overflow: hidden;
+}
+.slider-line {
+    display: flex;
+    transition: all ease 1s;
+}
+.btns {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    margin-left: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid coral;
+    padding: 8px 30px;
+    color: coral;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background .1s linear, color .1s linear;
+}
+.button:hover {
+    background-color: coral;
+    color: white;
+}
+
+.section_coral {
+    padding: 80px 0;
+    color: white;
+    background-color: coral;
+    text-align: center;
+}
+
+.facts {
+    display: flex;
+    color: #999;
+}
+.facts_item {
+    flex: 1 1 0;
+    padding-left: 50px;
+}
+.hr {
+    border: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin: 40px 0;
+}
+
+
+
+
+
+.img_section {
+    padding: 80px 0;
+    width: 100%;
+    height: 70vh;
+    background: url("../img/fon1.jpeg") center no-repeat;
+    background-size: cover;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+.img_title {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.img_subtitle {
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+.img_section .main img {
+    margin-top: 35px;
+    max-width: 500px;
+}
+
+
+
+  
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding-bottom: 80px;
+    color: black;
+    
+    display: grid;
+    place-items: center;
+}
+.prlx_btn {
+    display: grid;
+    place-items: center;
+    padding: 10px 20px;
+    
+    color: white;
+    font-size: 20px;
+    background-color: rgb(55, 132, 232);
+    border: 0;
+    border-radius: 4px;
+    min-height: 48px;
+    cursor: pointer;
+    transition: background-color 0.135s linear;
+}
+.prlx_btn:hover {
+      background-color: orange;
+}
+.title {
+    margin: 0;
+    margin-bottom: 2.5rem;
+    font-size: 48px;
+}
+.circle {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: coral;
+    background-image: url(../img/tikva.png);
+    background-size: 200px;
+    background-position: -15px;
+}
+.parallax {
+    width: 50%;
+    padding: 5rem;
+    min-height: 10rem;
+    position: relative;
+    overflow: hidden;
+    
+    border: 1px solid rgb(55, 132, 232);
+    border-radius: 5px;
+} 
+.parallax__layer {
+    transition: transform 0.3s linear;
+    will-change: transform;
+}
+
+
+.footer {
+    padding: 20px 0;
+    background-color: rgb(3, 71, 160);
+}
+.in_footer {
+    text-align: center;
+}
+.footer_text {
+    padding-top: 30px;
+}
+
+
+.back_to_top {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #f5f5f5;
+    color: #444;
+    cursor: pointer;
+    border-radius: 2px;
+    display: none;
+    border: rgb(55, 132, 232) 2px solid;
+}
+.back_to_top:hover {
+    background: #e9ebec;
+}
+.back_to_top-show {
+    display: block;
+}
